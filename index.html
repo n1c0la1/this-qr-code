@@ -3,12 +3,23 @@
   <head>
     <title>SCAN ME</title>
     <style>
+      .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh; /* vh stands for viewport height, this will make the container take 100% of the viewport height */
+      }
       img {
-        height: 300%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
       }
     </style>
   </head>
   <body>
-    <img src="this-qr-code.png" alt="SCAN ME!!!">
+    <div class="img-container">
+      <img src="this-qr-code.png" alt="SCAN ME">
+    </div>
   </body>
 </html>
